@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30350630CE5E440CA51CE5C8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0FED0D36AC4CEF84DA2C95 /* libPods.a */; };
+		4237F94016B79168000EBBC3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4237F93F16B79168000EBBC3 /* SenTestingKit.framework */; };
+		4237F94116B79168000EBBC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B8550E16B7524500AF5F74 /* UIKit.framework */; };
+		4237F94216B79168000EBBC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B8551016B7524500AF5F74 /* Foundation.framework */; };
+		4237F94816B79168000EBBC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4237F94616B79168000EBBC3 /* InfoPlist.strings */; };
+		4237F95116B79215000EBBC3 /* FirstSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F95016B79215000EBBC3 /* FirstSpecs.m */; };
+		4237F95516B79565000EBBC3 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F95416B79565000EBBC3 /* ApiClient.m */; };
+		4237F95916B79DF7000EBBC3 /* Sponsor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F95816B79DF7000EBBC3 /* Sponsor.m */; };
 		42B8550F16B7524500AF5F74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B8550E16B7524500AF5F74 /* UIKit.framework */; };
 		42B8551116B7524500AF5F74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B8551016B7524500AF5F74 /* Foundation.framework */; };
 		42B8551316B7524500AF5F74 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B8551216B7524500AF5F74 /* CoreGraphics.framework */; };
@@ -18,9 +26,20 @@
 		42B8552516B7524500AF5F74 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B8552416B7524500AF5F74 /* Default-568h@2x.png */; };
 		42B8552816B7524500AF5F74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8552716B7524500AF5F74 /* ViewController.m */; };
 		42B8552B16B7524500AF5F74 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B8552916B7524500AF5F74 /* ViewController.xib */; };
+		DCEB27D3231F4754BBF416EC /* libPods-kcdciosSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA1607D62E342F89E1BCE55 /* libPods-kcdciosSpecs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4237F93E16B79168000EBBC3 /* kcdciosSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kcdciosSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4237F93F16B79168000EBBC3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4237F94516B79168000EBBC3 /* kcdciosSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kcdciosSpecs-Info.plist"; sourceTree = "<group>"; };
+		4237F94716B79168000EBBC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4237F94C16B79168000EBBC3 /* kcdciosSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kcdciosSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		4237F95016B79215000EBBC3 /* FirstSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstSpecs.m; sourceTree = "<group>"; };
+		4237F95316B79565000EBBC3 /* ApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiClient.h; path = Core/ApiClient.h; sourceTree = "<group>"; };
+		4237F95416B79565000EBBC3 /* ApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiClient.m; path = Core/ApiClient.m; sourceTree = "<group>"; };
+		4237F95716B79DF7000EBBC3 /* Sponsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sponsor.h; path = Core/Models/Sponsor.h; sourceTree = "<group>"; };
+		4237F95816B79DF7000EBBC3 /* Sponsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sponsor.m; path = Core/Models/Sponsor.m; sourceTree = "<group>"; };
 		42B8550A16B7524500AF5F74 /* kcdcios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kcdcios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B8550E16B7524500AF5F74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42B8551016B7524500AF5F74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,9 +56,24 @@
 		42B8552616B7524500AF5F74 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		42B8552716B7524500AF5F74 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		42B8552A16B7524500AF5F74 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		5662B13A34F543AE9D3C74EC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kcdciosSpecs.xcconfig"; path = "Pods/Pods-kcdciosSpecs.xcconfig"; sourceTree = SOURCE_ROOT; };
+		9D0FED0D36AC4CEF84DA2C95 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA1607D62E342F89E1BCE55 /* libPods-kcdciosSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kcdciosSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4237F93A16B79168000EBBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4237F94016B79168000EBBC3 /* SenTestingKit.framework in Frameworks */,
+				4237F94116B79168000EBBC3 /* UIKit.framework in Frameworks */,
+				4237F94216B79168000EBBC3 /* Foundation.framework in Frameworks */,
+				DCEB27D3231F4754BBF416EC /* libPods-kcdciosSpecs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42B8550716B7524500AF5F74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,18 +81,60 @@
 				42B8550F16B7524500AF5F74 /* UIKit.framework in Frameworks */,
 				42B8551116B7524500AF5F74 /* Foundation.framework in Frameworks */,
 				42B8551316B7524500AF5F74 /* CoreGraphics.framework in Frameworks */,
+				30350630CE5E440CA51CE5C8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4237F94316B79168000EBBC3 /* kcdciosSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				4237F94416B79168000EBBC3 /* Supporting Files */,
+				4237F95016B79215000EBBC3 /* FirstSpecs.m */,
+			);
+			path = kcdciosSpecs;
+			sourceTree = "<group>";
+		};
+		4237F94416B79168000EBBC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4237F94516B79168000EBBC3 /* kcdciosSpecs-Info.plist */,
+				4237F94616B79168000EBBC3 /* InfoPlist.strings */,
+				4237F94C16B79168000EBBC3 /* kcdciosSpecs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4237F95216B79525000EBBC3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4237F95616B79DD3000EBBC3 /* Models */,
+				4237F95316B79565000EBBC3 /* ApiClient.h */,
+				4237F95416B79565000EBBC3 /* ApiClient.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		4237F95616B79DD3000EBBC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4237F95716B79DF7000EBBC3 /* Sponsor.h */,
+				4237F95816B79DF7000EBBC3 /* Sponsor.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		42B854FF16B7524500AF5F74 = {
 			isa = PBXGroup;
 			children = (
 				42B8551416B7524500AF5F74 /* kcdcios */,
+				4237F94316B79168000EBBC3 /* kcdciosSpecs */,
 				42B8550D16B7524500AF5F74 /* Frameworks */,
 				42B8550B16B7524500AF5F74 /* Products */,
+				5662B13A34F543AE9D3C74EC /* Pods.xcconfig */,
+				8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				42B8550A16B7524500AF5F74 /* kcdcios.app */,
+				4237F93E16B79168000EBBC3 /* kcdciosSpecs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +153,9 @@
 				42B8550E16B7524500AF5F74 /* UIKit.framework */,
 				42B8551016B7524500AF5F74 /* Foundation.framework */,
 				42B8551216B7524500AF5F74 /* CoreGraphics.framework */,
+				9D0FED0D36AC4CEF84DA2C95 /* libPods.a */,
+				4237F93F16B79168000EBBC3 /* SenTestingKit.framework */,
+				CFA1607D62E342F89E1BCE55 /* libPods-kcdciosSpecs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +163,7 @@
 		42B8551416B7524500AF5F74 /* kcdcios */ = {
 			isa = PBXGroup;
 			children = (
+				4237F95216B79525000EBBC3 /* Core */,
 				42B8551D16B7524500AF5F74 /* AppDelegate.h */,
 				42B8551E16B7524500AF5F74 /* AppDelegate.m */,
 				42B8552616B7524500AF5F74 /* ViewController.h */,
@@ -110,6 +191,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4237F93D16B79168000EBBC3 /* kcdciosSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4237F94F16B79168000EBBC3 /* Build configuration list for PBXNativeTarget "kcdciosSpecs" */;
+			buildPhases = (
+				4237F93916B79168000EBBC3 /* Sources */,
+				4237F93A16B79168000EBBC3 /* Frameworks */,
+				4237F93B16B79168000EBBC3 /* Resources */,
+				4237F93C16B79168000EBBC3 /* ShellScript */,
+				90B0B3BC08644FC689BFCDCA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kcdciosSpecs;
+			productName = kcdciosSpecs;
+			productReference = 4237F93E16B79168000EBBC3 /* kcdciosSpecs.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		42B8550916B7524500AF5F74 /* kcdcios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42B8552E16B7524500AF5F74 /* Build configuration list for PBXNativeTarget "kcdcios" */;
@@ -117,6 +217,7 @@
 				42B8550616B7524500AF5F74 /* Sources */,
 				42B8550716B7524500AF5F74 /* Frameworks */,
 				42B8550816B7524500AF5F74 /* Resources */,
+				25B3BE4E2B1D417CB53B06F0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,11 +250,20 @@
 			projectRoot = "";
 			targets = (
 				42B8550916B7524500AF5F74 /* kcdcios */,
+				4237F93D16B79168000EBBC3 /* kcdciosSpecs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4237F93B16B79168000EBBC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4237F94816B79168000EBBC3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42B8550816B7524500AF5F74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,7 +278,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25B3BE4E2B1D417CB53B06F0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		4237F93C16B79168000EBBC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		90B0B3BC08644FC689BFCDCA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-kcdciosSpecs-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		4237F93916B79168000EBBC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4237F95116B79215000EBBC3 /* FirstSpecs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42B8550616B7524500AF5F74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,12 +338,22 @@
 				42B8551B16B7524500AF5F74 /* main.m in Sources */,
 				42B8551F16B7524500AF5F74 /* AppDelegate.m in Sources */,
 				42B8552816B7524500AF5F74 /* ViewController.m in Sources */,
+				4237F95516B79565000EBBC3 /* ApiClient.m in Sources */,
+				4237F95916B79DF7000EBBC3 /* Sponsor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4237F94616B79168000EBBC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4237F94716B79168000EBBC3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		42B8551716B7524500AF5F74 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -201,6 +373,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4237F94D16B79168000EBBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kcdciosSpecs/kcdciosSpecs-Prefix.pch";
+				INFOPLIST_FILE = "kcdciosSpecs/kcdciosSpecs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4237F94E16B79168000EBBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kcdciosSpecs/kcdciosSpecs-Prefix.pch";
+				INFOPLIST_FILE = "kcdciosSpecs/kcdciosSpecs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		42B8552C16B7524500AF5F74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -253,10 +465,19 @@
 		};
 		42B8552F16B7524500AF5F74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5662B13A34F543AE9D3C74EC /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kcdcios/kcdcios-Prefix.pch";
 				INFOPLIST_FILE = "kcdcios/kcdcios-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRANK_LIBRARY_SEARCH_PATHS)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(FRANK_LDFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -264,6 +485,7 @@
 		};
 		42B8553016B7524500AF5F74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5662B13A34F543AE9D3C74EC /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kcdcios/kcdcios-Prefix.pch";
@@ -276,6 +498,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4237F94F16B79168000EBBC3 /* Build configuration list for PBXNativeTarget "kcdciosSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4237F94D16B79168000EBBC3 /* Debug */,
+				4237F94E16B79168000EBBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		42B8550416B7524500AF5F74 /* Build configuration list for PBXProject "kcdcios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -292,6 +523,7 @@
 				42B8553016B7524500AF5F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
