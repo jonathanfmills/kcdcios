@@ -9,7 +9,7 @@
 #import "ApiClient.h"
 #import "AFNetworking.h"
 
-#define APIClientBaseURL @"http://localhost:3000/api/"
+#define APIClientBaseURL @"http://kcdc13.herokuapp.com/api/"
 
 @implementation ApiClient
 
