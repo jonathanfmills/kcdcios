@@ -37,6 +37,10 @@
 		42B8552116B7524500AF5F74 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B8552016B7524500AF5F74 /* Default.png */; };
 		42B8552316B7524500AF5F74 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B8552216B7524500AF5F74 /* Default@2x.png */; };
 		42B8552516B7524500AF5F74 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B8552416B7524500AF5F74 /* Default-568h@2x.png */; };
+		42BC304E16BF463C00BF6FB6 /* SessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC304D16BF463C00BF6FB6 /* SessionViewController.m */; };
+		42D41ED316BDFC640055AC0E /* SpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D41ED216BDFC640055AC0E /* SpeakerViewController.m */; };
+		42D41ED616BE35CE0055AC0E /* SessionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D41ED516BE35CE0055AC0E /* SessionListViewController.m */; };
+		42D41ED916BE40200055AC0E /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D41ED816BE40200055AC0E /* Session.m */; };
 		DCEB27D3231F4754BBF416EC /* libPods-kcdciosSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA1607D62E342F89E1BCE55 /* libPods-kcdciosSpecs.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +85,14 @@
 		42B8552016B7524500AF5F74 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		42B8552216B7524500AF5F74 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		42B8552416B7524500AF5F74 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		42BC304C16BF463C00BF6FB6 /* SessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionViewController.h; sourceTree = "<group>"; };
+		42BC304D16BF463C00BF6FB6 /* SessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionViewController.m; sourceTree = "<group>"; };
+		42D41ED116BDFC640055AC0E /* SpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerViewController.h; sourceTree = "<group>"; };
+		42D41ED216BDFC640055AC0E /* SpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerViewController.m; sourceTree = "<group>"; };
+		42D41ED416BE35CE0055AC0E /* SessionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionListViewController.h; sourceTree = "<group>"; };
+		42D41ED516BE35CE0055AC0E /* SessionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionListViewController.m; sourceTree = "<group>"; };
+		42D41ED716BE40200055AC0E /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Session.h; path = Core/Models/Session.h; sourceTree = "<group>"; };
+		42D41ED816BE40200055AC0E /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Session.m; path = Core/Models/Session.m; sourceTree = "<group>"; };
 		5662B13A34F543AE9D3C74EC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kcdciosSpecs.xcconfig"; path = "Pods/Pods-kcdciosSpecs.xcconfig"; sourceTree = SOURCE_ROOT; };
 		9D0FED0D36AC4CEF84DA2C95 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +184,8 @@
 				4237F95816B79DF7000EBBC3 /* Sponsor.m */,
 				426AFC8516BB641600F6A7E6 /* Speaker.h */,
 				426AFC8616BB641600F6A7E6 /* Speaker.m */,
+				42D41ED716BE40200055AC0E /* Session.h */,
+				42D41ED816BE40200055AC0E /* Session.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -185,6 +199,12 @@
 				4224D1F216B8F165003FFBD2 /* SponsorListViewController.m */,
 				426AFC8216BB487200F6A7E6 /* SpeakerListViewController.h */,
 				426AFC8316BB487200F6A7E6 /* SpeakerListViewController.m */,
+				42D41ED116BDFC640055AC0E /* SpeakerViewController.h */,
+				42D41ED216BDFC640055AC0E /* SpeakerViewController.m */,
+				42D41ED416BE35CE0055AC0E /* SessionListViewController.h */,
+				42D41ED516BE35CE0055AC0E /* SessionListViewController.m */,
+				42BC304C16BF463C00BF6FB6 /* SessionViewController.h */,
+				42BC304D16BF463C00BF6FB6 /* SessionViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -422,6 +442,10 @@
 				4224D1F316B8F165003FFBD2 /* SponsorListViewController.m in Sources */,
 				426AFC8416BB487200F6A7E6 /* SpeakerListViewController.m in Sources */,
 				426AFC8716BB641600F6A7E6 /* Speaker.m in Sources */,
+				42D41ED316BDFC640055AC0E /* SpeakerViewController.m in Sources */,
+				42D41ED616BE35CE0055AC0E /* SessionListViewController.m in Sources */,
+				42D41ED916BE40200055AC0E /* Session.m in Sources */,
+				42BC304E16BF463C00BF6FB6 /* SessionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

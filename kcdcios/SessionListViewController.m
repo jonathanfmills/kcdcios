@@ -1,18 +1,18 @@
 //
-//  SpeakerListViewController.m
+//  SessionListViewController.m
 //  kcdcios
 //
-//  Created by Lee Brandt on 1/31/13.
+//  Created by Lee Brandt on 2/3/13.
 //  Copyright (c) 2013 Lee Brandt. All rights reserved.
 //
 
-#import "SpeakerListViewController.h"
+#import "SessionListViewController.h"
 #import "ApiClient.h"
-#import "Speaker.h"
-#import "AFNetworking.h"
-#import "SpeakerViewController.h"
+#import "Session.h"
+#import "SVProgressHUD.h"
+#import "SessionViewController.h"
 
-@implementation SpeakerListViewController
+@implementation SessionListViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,21 +26,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[ApiClient sharedInstance] getPath:@"speaker" parameters:nil
+
+    [SVProgressHUD show];
+    [[ApiClient sharedInstance] getPath:@"session" parameters:nil
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                     NSLog(@"Response: %@", responseObject);
-                                    self.speakers = [NSMutableArray array];
-                                    for (id speakerDictionary in responseObject) {
-                                        Speaker *speaker = [[Speaker alloc] initWithDictionary:speakerDictionary];
-                                        [self.speakers addObject:speaker];
+                                    self.sessions = [NSMutableArray array];
+                                    for (id sessionDictionary in responseObject) {
+                                        Session *session = [[Session alloc] initWithDictionary:sessionDictionary];
+                                        [self.sessions addObject:session];
                                     }
                                     [self.tableView reloadData];
+                                    [SVProgressHUD dismiss];
                                 }
                                 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                     NSLog(@"Received an Error: %@", error);
+                                    [SVProgressHUD showErrorWithStatus:@"Unable to retrieve session."];
                                 }];
 
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,30 +62,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.speakers.count;
+    return self.sessions.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"speakerCell";
+    static NSString *CellIdentifier = @"sessionCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    Speaker *speaker = [self.speakers objectAtIndex:indexPath.row];
+    NSLog(@"Sessions: %@", self.sessions);
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", speaker.firstName, speaker.lastName];
-    //cell.detailTextLabel.text = speaker.bio;
-    [cell.imageView setImageWithURL:[NSURL URLWithString:speaker.picUrl]
-                   placeholderImage:[UIImage imageNamed:@"avatar.jpg"]];
+    Session *session = [self.sessions objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = session.name;
+    cell.detailTextLabel.text = session.synopsis;
+
     return cell;
 }
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 
@@ -91,9 +88,9 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    SpeakerViewController *speakerViewController = segue.destinationViewController;
+    SessionViewController *sessionViewController = segue.destinationViewController;
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    speakerViewController.speaker = [self.speakers objectAtIndex:indexPath.row];
+    sessionViewController.session = [self.sessions objectAtIndex:indexPath.row];
 }
 
 @end
