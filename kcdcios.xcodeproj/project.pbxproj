@@ -289,8 +289,8 @@
 				4237F93916B79168000EBBC3 /* Sources */,
 				4237F93A16B79168000EBBC3 /* Frameworks */,
 				4237F93B16B79168000EBBC3 /* Resources */,
-				4237F93C16B79168000EBBC3 /* ShellScript */,
 				90B0B3BC08644FC689BFCDCA /* Copy Pods Resources */,
+				4237F93C16B79168000EBBC3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -404,6 +404,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			showEnvVarsInLog = 0;
 		};
 		90B0B3BC08644FC689BFCDCA /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -418,6 +419,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-kcdciosSpecs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -487,6 +489,7 @@
 				INFOPLIST_FILE = "kcdciosSpecs/kcdciosSpecs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -507,6 +510,7 @@
 				INFOPLIST_FILE = "kcdciosSpecs/kcdciosSpecs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
