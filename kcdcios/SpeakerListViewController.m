@@ -11,6 +11,7 @@
 #import "Speaker.h"
 #import "AFNetworking.h"
 #import "SpeakerViewController.h"
+#import "SVProgressHUD.h"
 
 @implementation SpeakerListViewController
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [SVProgressHUD show];
     [[ApiClient sharedInstance] getPath:@"speaker" parameters:nil
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                     NSLog(@"Response: %@", responseObject);
@@ -35,6 +37,7 @@
                                         [self.speakers addObject:speaker];
                                     }
                                     [self.tableView reloadData];
+                                    [SVProgressHUD dismiss];
                                 }
                                 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                     NSLog(@"Received an Error: %@", error);
