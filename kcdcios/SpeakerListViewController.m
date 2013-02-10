@@ -12,6 +12,7 @@
 #import "AFNetworking.h"
 #import "SpeakerViewController.h"
 #import "SVProgressHUD.h"
+#import "SpeakerCellViewController.h"
 
 @implementation SpeakerListViewController
 
@@ -27,6 +28,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Speakers";
+    [self loadSpeakers];
+
+
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)loadSpeakers{
     [SVProgressHUD show];
     [[ApiClient sharedInstance] getPath:@"speaker" parameters:nil
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -42,14 +56,6 @@
                                 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                     NSLog(@"Received an Error: %@", error);
                                 }];
-
-
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -66,25 +72,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"speakerCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *cellIdentifier = @"speakerCell";
+    SpeakerCellViewController *cell = (SpeakerCellViewController *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     Speaker *speaker = [self.speakers objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", speaker.firstName, speaker.lastName];
-    //cell.detailTextLabel.text = speaker.bio;
-    [cell.imageView setImageWithURL:[NSURL URLWithString:speaker.picUrl]
-                   placeholderImage:[UIImage imageNamed:@"avatar.jpg"]];
+    cell.speakerName.text = speaker.fullName;
+    cell.speakerLocation.text = speaker.location;
+    [cell.speakerImage setImageWithURL:[NSURL URLWithString:speaker.picUrl]
+                      placeholderImage:[UIImage imageNamed:@"avatar.jpg"]];
     return cell;
 }
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 

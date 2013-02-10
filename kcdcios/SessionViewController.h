@@ -13,5 +13,6 @@
 
 @property (nonatomic, strong) Session *session;
 @property (nonatomic, strong) IBOutlet UILabel *sessionNameLabel;
+@property (nonatomic, strong) IBOutlet UITextView *sessionSynopsis;
 
 @end

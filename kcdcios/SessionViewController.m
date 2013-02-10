@@ -23,6 +23,7 @@
 {
     [super viewDidLoad];
     self.sessionNameLabel.text = self.session.name;
+    self.sessionSynopsis.text = self.session.synopsis;
 }
 
 - (void)didReceiveMemoryWarning

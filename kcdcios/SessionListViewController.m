@@ -26,7 +26,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Sessions";
+    [self loadSessions];
+}
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)loadSessions{
     [SVProgressHUD show];
     [[ApiClient sharedInstance] getPath:@"session" parameters:nil
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -43,14 +53,6 @@
                                     NSLog(@"Received an Error: %@", error);
                                     [SVProgressHUD showErrorWithStatus:@"Unable to retrieve session."];
                                 }];
-
-    
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source

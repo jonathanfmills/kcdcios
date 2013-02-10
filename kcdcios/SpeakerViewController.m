@@ -7,6 +7,7 @@
 //
 
 #import "SpeakerViewController.h"
+#import "AFNetworking.h"
 
 @implementation SpeakerViewController
 
@@ -25,8 +26,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.speakerNameLabel.text = [NSString stringWithFormat:@"%@ %@", self.speaker.firstName, self.speaker.lastName];
+    self.title = self.speaker.fullName;
+    self.speakerFirstNameLabel.text = self.speaker.firstName;
+    self.speakerLastNameLabel.text = self.speaker.lastName;
+    self.speakerLocationLabel.text = self.speaker.location;
     self.speakerBioView.text = self.speaker.bio;
+    [self.speakerImageView setImageWithURL:[NSURL URLWithString:self.speaker.picUrl]
+                          placeholderImage:[UIImage imageNamed:@"avatar.jpg"]];
 }
 
 - (void)didReceiveMemoryWarning

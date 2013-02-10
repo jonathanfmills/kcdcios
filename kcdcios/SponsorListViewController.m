@@ -26,7 +26,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Sponsors";
     self.sponsorshipTypes = [ NSArray arrayWithObjects:@"Platinum", @"Gold", @"Silver", @"Product", nil ];
+    [self loadSponsors];
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //[self.tableView reloadData];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)loadSponsors{
     [SVProgressHUD show];
     [[ApiClient sharedInstance] getPath:@"sponsor" parameters:nil
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -43,18 +59,6 @@
                                     NSLog(@"Received an Error: %@", error);
                                     [SVProgressHUD showErrorWithStatus:error.description];
                                 }];
-    
-}
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    //[self.tableView reloadData];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -79,6 +83,7 @@
     
     cell.textLabel.text = sponsor.name;
     cell.detailTextLabel.text = sponsor.url;
+    cell.userInteractionEnabled = NO;//[sponsor.type isEqual: @"Platinum"];
     return cell;
 };
 

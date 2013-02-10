@@ -17,9 +17,17 @@
         self.lastName = [dictionary objectForKey:@"lastName"];
         self.picUrl = [dictionary objectForKey:@"picUrl"];
         self.bio = [dictionary objectForKey:@"bio"];
+        self.location = [dictionary objectForKey:@"location"];
+        self.email = [dictionary objectForKey:@"email"];
+        self.url = [dictionary objectForKey:@"url"];
+
     }
     
     return self;
+}
+
+-(NSString *)fullName{
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
 @end

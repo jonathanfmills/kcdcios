@@ -23,6 +23,10 @@
 @property (nonatomic, copy) NSString *lastName;
 @property (nonatomic, copy) NSString *picUrl;
 @property (nonatomic, copy) NSString *bio;
+@property (nonatomic, copy) NSString *location;
+@property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy) NSString *url;
+@property (nonatomic, readonly) NSString *fullName;
 
 -(id) initWithDictionary:(NSDictionary *)dictionary;
 

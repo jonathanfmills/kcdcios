@@ -24,6 +24,9 @@
 		4237F95116B79215000EBBC3 /* FirstSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F95016B79215000EBBC3 /* FirstSpecs.m */; };
 		4237F95516B79565000EBBC3 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F95416B79565000EBBC3 /* ApiClient.m */; };
 		4237F95916B79DF7000EBBC3 /* Sponsor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F95816B79DF7000EBBC3 /* Sponsor.m */; };
+		42454BF816C72FE400E3EAA6 /* KCCC_FloorPlan.png in Resources */ = {isa = PBXBuildFile; fileRef = 42454BF716C72FE400E3EAA6 /* KCCC_FloorPlan.png */; };
+		42454BFB16C7392500E3EAA6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42454BFA16C7392500E3EAA6 /* MapViewController.m */; };
+		424F22FD16C7621700D89978 /* SpeakerCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424F22FC16C7621700D89978 /* SpeakerCellViewController.m */; };
 		4251008E16B8744B00C9DC21 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4251008C16B8744B00C9DC21 /* HomeViewController.m */; };
 		426AFC8416BB487200F6A7E6 /* SpeakerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426AFC8316BB487200F6A7E6 /* SpeakerListViewController.m */; };
 		426AFC8716BB641600F6A7E6 /* Speaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 426AFC8616BB641600F6A7E6 /* Speaker.m */; };
@@ -65,6 +68,11 @@
 		4237F95416B79565000EBBC3 /* ApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiClient.m; path = Core/ApiClient.m; sourceTree = "<group>"; };
 		4237F95716B79DF7000EBBC3 /* Sponsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sponsor.h; path = Core/Models/Sponsor.h; sourceTree = "<group>"; };
 		4237F95816B79DF7000EBBC3 /* Sponsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sponsor.m; path = Core/Models/Sponsor.m; sourceTree = "<group>"; };
+		42454BF716C72FE400E3EAA6 /* KCCC_FloorPlan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KCCC_FloorPlan.png; sourceTree = "<group>"; };
+		42454BF916C7392500E3EAA6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		42454BFA16C7392500E3EAA6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		424F22FB16C7621700D89978 /* SpeakerCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerCellViewController.h; sourceTree = "<group>"; };
+		424F22FC16C7621700D89978 /* SpeakerCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerCellViewController.m; sourceTree = "<group>"; };
 		4251008B16B8744B00C9DC21 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		4251008C16B8744B00C9DC21 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		426AFC8216BB487200F6A7E6 /* SpeakerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerListViewController.h; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 		4224D1B716B880A7003FFBD2 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				42454BF716C72FE400E3EAA6 /* KCCC_FloorPlan.png */,
 				426AFC9A16BB971B00F6A7E6 /* avatar.jpg */,
 				4224D1EF16B8EE2A003FFBD2 /* appbar.home.png */,
 				4224D1EB16B88992003FFBD2 /* appbar.money.png */,
@@ -205,6 +214,10 @@
 				42D41ED516BE35CE0055AC0E /* SessionListViewController.m */,
 				42BC304C16BF463C00BF6FB6 /* SessionViewController.h */,
 				42BC304D16BF463C00BF6FB6 /* SessionViewController.m */,
+				42454BF916C7392500E3EAA6 /* MapViewController.h */,
+				42454BFA16C7392500E3EAA6 /* MapViewController.m */,
+				424F22FB16C7621700D89978 /* SpeakerCellViewController.h */,
+				424F22FC16C7621700D89978 /* SpeakerCellViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -372,6 +385,7 @@
 				4224D1EE16B8EA2E003FFBD2 /* Main.storyboard in Resources */,
 				4224D1F016B8EE2A003FFBD2 /* appbar.home.png in Resources */,
 				426AFC9B16BB971B00F6A7E6 /* avatar.jpg in Resources */,
+				42454BF816C72FE400E3EAA6 /* KCCC_FloorPlan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +460,8 @@
 				42D41ED616BE35CE0055AC0E /* SessionListViewController.m in Sources */,
 				42D41ED916BE40200055AC0E /* Session.m in Sources */,
 				42BC304E16BF463C00BF6FB6 /* SessionViewController.m in Sources */,
+				42454BFB16C7392500E3EAA6 /* MapViewController.m in Sources */,
+				424F22FD16C7621700D89978 /* SpeakerCellViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

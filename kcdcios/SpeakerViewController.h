@@ -13,8 +13,10 @@
 
 @property (nonatomic, strong) Speaker *speaker;
 
-@property (nonatomic, strong) IBOutlet UILabel *speakerNameLabel;
-@property (nonatomic, strong) IBOutlet UITextView *speakerBioView;
-@property (nonatomic, strong) IBOutlet UIImageView *speakerImageView;
+@property (nonatomic, weak) IBOutlet UILabel *speakerFirstNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *speakerLastNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *speakerLocationLabel;
+@property (nonatomic, weak) IBOutlet UITextView *speakerBioView;
+@property (nonatomic, weak) IBOutlet UIImageView *speakerImageView;
 
 @end
