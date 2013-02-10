@@ -1,0 +1,5 @@
+=== BUILD NATIVE TARGET kcdcios OF PROJECT kcdcios WITH CONFIGURATION Debug ===
+Check dependencies
+Code Sign error: A valid provisioning profile matching the application's Identifier 'com.leebrandt.kcdcios' could not be found
+
+
