@@ -1,3 +1,3 @@
 # Gemfile
 source :rubygems
-gem "wox"
+gem "shenzhen"
