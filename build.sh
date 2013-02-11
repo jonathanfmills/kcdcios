@@ -7,8 +7,9 @@ export TERM=xterm
 # e.g. possibly do 'rake db:migrate db:test:prepare' here
 #bundle install
 # Finally, run your tests
-rake Test
+# rake Test
 # and build the gem
-rake Build
+# rake Build
 # and install the gem locally
-rake Deploy
+# rake Deploy
+ipa build
