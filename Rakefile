@@ -1,6 +1,4 @@
 include Rake::DSL
-require 'bundler'
-Bundler.require
 
 task :Build do
 	puts "Building the ipa"
