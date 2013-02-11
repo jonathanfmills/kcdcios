@@ -5,7 +5,7 @@ export TERM=xterm
 #rvm use 1.9.3@gemset --create
 # Do any setup
 # e.g. possibly do 'rake db:migrate db:test:prepare' here
-bundle install
+#bundle install
 # Finally, run your tests
 rake Test
 # and build the gem
