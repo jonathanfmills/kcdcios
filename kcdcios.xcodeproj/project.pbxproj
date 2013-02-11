@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30350630CE5E440CA51CE5C8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0FED0D36AC4CEF84DA2C95 /* libPods.a */; };
+		422050F316C9510C00A72BB1 /* KCCC_FloorPlan.png in Resources */ = {isa = PBXBuildFile; fileRef = 422050F216C9510C00A72BB1 /* KCCC_FloorPlan.png */; };
 		4224D1B916B88101003FFBD2 /* form_divider.png in Resources */ = {isa = PBXBuildFile; fileRef = 4224D1B816B88101003FFBD2 /* form_divider.png */; };
 		4224D1BB16B88219003FFBD2 /* appbar.calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4224D1BA16B88219003FFBD2 /* appbar.calendar.png */; };
 		4224D1E416B882AA003FFBD2 /* appbar.people.status.png in Resources */ = {isa = PBXBuildFile; fileRef = 4224D1E316B882AA003FFBD2 /* appbar.people.status.png */; };
@@ -24,7 +25,6 @@
 		4237F95116B79215000EBBC3 /* FirstSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F95016B79215000EBBC3 /* FirstSpecs.m */; };
 		4237F95516B79565000EBBC3 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F95416B79565000EBBC3 /* ApiClient.m */; };
 		4237F95916B79DF7000EBBC3 /* Sponsor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F95816B79DF7000EBBC3 /* Sponsor.m */; };
-		42454BF816C72FE400E3EAA6 /* KCCC_FloorPlan.png in Resources */ = {isa = PBXBuildFile; fileRef = 42454BF716C72FE400E3EAA6 /* KCCC_FloorPlan.png */; };
 		42454BFB16C7392500E3EAA6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42454BFA16C7392500E3EAA6 /* MapViewController.m */; };
 		424F22FD16C7621700D89978 /* SpeakerCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424F22FC16C7621700D89978 /* SpeakerCellViewController.m */; };
 		4251008E16B8744B00C9DC21 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4251008C16B8744B00C9DC21 /* HomeViewController.m */; };
@@ -48,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		422050F216C9510C00A72BB1 /* KCCC_FloorPlan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = KCCC_FloorPlan.png; path = kcdcios/Resources/images/KCCC_FloorPlan.png; sourceTree = "<group>"; };
 		4224D1B816B88101003FFBD2 /* form_divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = form_divider.png; path = kcdcios/Resources/images/form_divider.png; sourceTree = "<group>"; };
 		4224D1BA16B88219003FFBD2 /* appbar.calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appbar.calendar.png; path = kcdcios/Resources/images/appbar.calendar.png; sourceTree = "<group>"; };
 		4224D1E316B882AA003FFBD2 /* appbar.people.status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appbar.people.status.png; path = kcdcios/Resources/images/appbar.people.status.png; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		4237F95416B79565000EBBC3 /* ApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiClient.m; path = Core/ApiClient.m; sourceTree = "<group>"; };
 		4237F95716B79DF7000EBBC3 /* Sponsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sponsor.h; path = Core/Models/Sponsor.h; sourceTree = "<group>"; };
 		4237F95816B79DF7000EBBC3 /* Sponsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sponsor.m; path = Core/Models/Sponsor.m; sourceTree = "<group>"; };
-		42454BF716C72FE400E3EAA6 /* KCCC_FloorPlan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KCCC_FloorPlan.png; sourceTree = "<group>"; };
 		42454BF916C7392500E3EAA6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		42454BFA16C7392500E3EAA6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		424F22FB16C7621700D89978 /* SpeakerCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerCellViewController.h; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		4224D1B716B880A7003FFBD2 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				42454BF716C72FE400E3EAA6 /* KCCC_FloorPlan.png */,
+				422050F216C9510C00A72BB1 /* KCCC_FloorPlan.png */,
 				426AFC9A16BB971B00F6A7E6 /* avatar.jpg */,
 				4224D1EF16B8EE2A003FFBD2 /* appbar.home.png */,
 				4224D1EB16B88992003FFBD2 /* appbar.money.png */,
@@ -385,7 +385,7 @@
 				4224D1EE16B8EA2E003FFBD2 /* Main.storyboard in Resources */,
 				4224D1F016B8EE2A003FFBD2 /* appbar.home.png in Resources */,
 				426AFC9B16BB971B00F6A7E6 /* avatar.jpg in Resources */,
-				42454BF816C72FE400E3EAA6 /* KCCC_FloorPlan.png in Resources */,
+				422050F316C9510C00A72BB1 /* KCCC_FloorPlan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,11 +493,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -506,9 +506,12 @@
 				GCC_PREFIX_HEADER = "kcdciosSpecs/kcdciosSpecs-Prefix.pch";
 				INFOPLIST_FILE = "kcdciosSpecs/kcdciosSpecs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TEST_AFTER_BUILD = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -517,10 +520,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -530,9 +533,10 @@
 				GCC_PREFIX_HEADER = "kcdciosSpecs/kcdciosSpecs-Prefix.pch";
 				INFOPLIST_FILE = "kcdciosSpecs/kcdciosSpecs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -591,6 +595,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5662B13A34F543AE9D3C74EC /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kcdcios/kcdcios-Prefix.pch";
 				INFOPLIST_FILE = "kcdcios/kcdcios-Info.plist";
@@ -598,11 +603,14 @@
 					"$(inherited)",
 					"$(FRANK_LIBRARY_SEARCH_PATHS)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(FRANK_LDFLAGS)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -611,10 +619,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5662B13A34F543AE9D3C74EC /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tracy BRANDT (X46649G5MU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tracy BRANDT (X46649G5MU)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kcdcios/kcdcios-Prefix.pch";
 				INFOPLIST_FILE = "kcdcios/kcdcios-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "05E861E4-A5F7-4202-94EC-F2477F4A5298";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "05E861E4-A5F7-4202-94EC-F2477F4A5298";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

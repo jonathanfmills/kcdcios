@@ -29,4 +29,10 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+
+# build stuff
 test-reports
+/build/*
+*.ipa
+*.app.dSYM.zip
