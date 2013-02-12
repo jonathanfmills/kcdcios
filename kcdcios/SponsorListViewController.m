@@ -64,6 +64,23 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	return [self.sponsorshipTypes objectAtIndex:section];
 }
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView* headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 40)];
+    UILabel* headerLabel = [[UILabel alloc] init];
+    headerLabel.frame = CGRectMake(12, 0, tableView.frame.size.width, 40);
+    headerLabel.backgroundColor = [UIColor clearColor];
+    headerLabel.textColor = [UIColor whiteColor];
+    headerLabel.font = [UIFont boldSystemFontOfSize:18];
+    headerLabel.text = [self tableView:tableView titleForHeaderInSection:section];
+    
+    [headerView addSubview:headerLabel];
+    
+    return headerView;
+};
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 40.0f;
+}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.sponsorshipTypes.count;

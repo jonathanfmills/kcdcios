@@ -305,7 +305,15 @@
                     <view key="view" contentMode="scaleToFill" id="Che-4I-OMR">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="home.png" translatesAutoresizingMaskIntoConstraints="NO" id="gtF-Cg-GUn"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gtF-Cg-GUn" firstAttribute="bottom" secondItem="Che-4I-OMR" secondAttribute="bottom" type="default" id="3CY-Rq-J7D"/>
+                            <constraint firstItem="gtF-Cg-GUn" firstAttribute="leading" secondItem="Che-4I-OMR" secondAttribute="leading" type="default" id="DJc-aO-A9f"/>
+                            <constraint firstItem="gtF-Cg-GUn" firstAttribute="top" secondItem="Che-4I-OMR" secondAttribute="top" type="default" id="Omf-ia-04l"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="appbar.home.png" id="Sr5-uw-aGc"/>
                     <navigationItem key="navigationItem" id="xOk-vs-kuV"/>
@@ -318,13 +326,13 @@
         <scene sceneID="a7y-gn-wJA">
             <objects>
                 <tableViewController id="Y1b-lj-USN" customClass="SponsorListViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="LEh-Qi-jqM">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="LEh-Qi-jqM">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sponsorCell" textLabel="Oee-QP-2oU" detailTextLabel="NDf-Hk-J4f" style="IBUITableViewCellStyleSubtitle" id="xIT-fq-UNc">
-                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <rect key="frame" x="0.0" y="46" width="320" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="10" y="1" width="300" height="43"/>
@@ -364,7 +372,8 @@
                 <navigationController id="Bg1-Fs-Tdr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Speakers" image="appbar.people.status.png" id="Uhg-Lm-N3j"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l7h-hE-N4j">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="l7h-hE-N4j">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -383,7 +392,8 @@
                 <navigationController id="KwB-Da-CKP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="2" title="Sessions" image="appbar.calendar.png" id="F4h-n8-BZk"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lFw-Ip-tgP">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="lFw-Ip-tgP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -402,7 +412,8 @@
                 <navigationController id="4GH-bk-G8w" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="3" title="Sponsors" image="appbar.money.png" id="Ud9-Jx-CCX"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zo8-0j-9DA">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="zo8-0j-9DA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -421,7 +432,8 @@
                 <navigationController id="gmY-Fl-nvj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="4" title="Maps" image="appbar.map.png" id="WjW-6l-h5g"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sGj-g2-9y9">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="sGj-g2-9y9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -442,6 +454,7 @@
         <image name="appbar.money.png" width="36" height="36"/>
         <image name="appbar.people.status.png" width="36" height="36"/>
         <image name="avatar.jpg" width="300" height="300"/>
+        <image name="home.png" width="320" height="480"/>
     </resources>
     <classes>
         <class className="MapViewController" superclassName="UIViewController">
