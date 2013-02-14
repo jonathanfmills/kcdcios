@@ -29,6 +29,9 @@
 {
     [super viewDidLoad];
     self.title = @"Speakers";
+    self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView
+                                                                    delegate:self];
+    [SVProgressHUD show];
     [self loadSpeakers];
 
 
@@ -41,7 +44,6 @@
 }
 
 -(void)loadSpeakers{
-    [SVProgressHUD show];
     [[ApiClient sharedInstance] getPath:@"speaker" parameters:nil
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                     NSLog(@"Response: %@", responseObject);
@@ -51,11 +53,22 @@
                                         [self.speakers addObject:speaker];
                                     }
                                     [self.tableView reloadData];
+                                    [self.pullToRefreshView finishLoading];
                                     [SVProgressHUD dismiss];
                                 }
                                 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                     NSLog(@"Received an Error: %@", error);
                                 }];
+}
+
+#pragma mark - PullToRefresh Delegate Methods
+
+- (BOOL)pullToRefreshViewShouldStartLoading:(SSPullToRefreshView *)view{
+    return YES;
+}
+
+- (void)pullToRefreshViewDidStartLoading:(SSPullToRefreshView *)view{
+    [self loadSpeakers];
 }
 
 #pragma mark - Table view data source

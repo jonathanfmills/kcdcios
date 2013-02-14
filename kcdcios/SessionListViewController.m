@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     self.title = @"Sessions";
+    self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView
+                                                                    delegate:self];
+    [SVProgressHUD show];
     [self loadSessions];
 }
 
@@ -37,7 +40,7 @@
 }
 
 -(void)loadSessions{
-    [SVProgressHUD show];
+
     [[ApiClient sharedInstance] getPath:@"session" parameters:nil
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                     NSLog(@"Response: %@", responseObject);
@@ -47,6 +50,7 @@
                                         [self.sessions addObject:session];
                                     }
                                     [self.tableView reloadData];
+                                    [self.pullToRefreshView finishLoading];
                                     [SVProgressHUD dismiss];
                                 }
                                 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -54,6 +58,18 @@
                                     [SVProgressHUD showErrorWithStatus:@"Unable to retrieve session."];
                                 }];
 }
+
+#pragma mark - PullToRefresh Delegate Methods
+
+- (BOOL)pullToRefreshViewShouldStartLoading:(SSPullToRefreshView *)view{
+    return YES;
+}
+
+- (void)pullToRefreshViewDidStartLoading:(SSPullToRefreshView *)view{
+    [self loadSessions];
+}
+
+
 
 #pragma mark - Table view data source
 

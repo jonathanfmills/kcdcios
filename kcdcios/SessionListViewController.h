@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SSPullToRefresh.h"
 
-@interface SessionListViewController : UITableViewController
+@interface SessionListViewController : UITableViewController<SSPullToRefreshViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *sessions;
 
 @property (nonatomic, strong) IBOutlet UILabel *sessionTitleLabel;
 @property (nonatomic, strong) IBOutlet UILabel *sessionDescriptionLabel;
 @property (nonatomic, strong) IBOutlet UILabel *sessionTimeLabel;
+
+@property (nonatomic, strong) SSPullToRefreshView *pullToRefreshView;
 
 @end

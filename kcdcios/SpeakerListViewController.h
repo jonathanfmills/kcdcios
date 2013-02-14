@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SSPullToRefresh.h"
 
-@interface SpeakerListViewController : UITableViewController
+@interface SpeakerListViewController : UITableViewController<SSPullToRefreshViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *speakers;
+
+@property (nonatomic, strong) SSPullToRefreshView *pullToRefreshView;
 
 @end
