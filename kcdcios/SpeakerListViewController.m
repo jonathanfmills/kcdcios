@@ -31,6 +31,7 @@
     self.title = @"Speakers";
     self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView
                                                                     delegate:self];
+    self.pullToRefreshView.contentView = [[SSPullToRefreshSimpleContentView alloc] init];
     [SVProgressHUD show];
     [self loadSpeakers];
 
