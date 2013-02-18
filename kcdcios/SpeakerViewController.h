@@ -19,4 +19,6 @@
 @property (nonatomic, weak) IBOutlet UITextView *speakerBioView;
 @property (nonatomic, weak) IBOutlet UIImageView *speakerImageView;
 
+-(IBAction)didTapViewSessions:(id)sender;
+
 @end

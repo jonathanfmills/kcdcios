@@ -7,6 +7,7 @@
 //
 
 #import "SpeakerViewController.h"
+#import "SessionListViewController.h"
 #import "AFNetworking.h"
 
 @implementation SpeakerViewController
@@ -39,6 +40,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)didTapViewSessions:(id)sender{
+    SessionListViewController *sessionListViewController = [SessionListViewController new];
+    [sessionListViewController setSpeakerEmail:self.speaker.email];
+    [self.navigationController pushViewController: sessionListViewController animated:YES];
 }
 
 @end

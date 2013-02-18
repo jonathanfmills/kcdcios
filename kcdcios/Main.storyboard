@@ -120,26 +120,45 @@
                                     <constraint firstItem="FeZ-eA-LS0" firstAttribute="top" secondItem="NiY-zj-KOl" secondAttribute="top" type="default" id="19B-42-aKY"/>
                                     <constraint firstItem="FeZ-eA-LS0" firstAttribute="centerX" secondItem="NiY-zj-KOl" secondAttribute="centerX" type="default" id="Lxg-0V-f2x"/>
                                     <constraint firstItem="FeZ-eA-LS0" firstAttribute="centerY" secondItem="NiY-zj-KOl" secondAttribute="centerY" type="default" id="ijW-xG-7Eb"/>
-                                    <constraint firstAttribute="trailing" secondItem="FeZ-eA-LS0" secondAttribute="trailing" constant="12" id="qdP-kN-HiT"/>
+                                    <constraint firstAttribute="trailing" secondItem="FeZ-eA-LS0" secondAttribute="trailing" constant="13" id="nID-GS-Mg5"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xy-K9-qff">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Bwc-jn-pX6"/>
+                                    <constraint firstAttribute="width" constant="168" id="t1e-dO-qNn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="View Speaker Sessions">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapViewSessions:" destination="s7f-DS-2Oj" eventType="touchUpInside" id="cOg-FI-4Ln"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="egg-8b-Gs7" firstAttribute="top" secondItem="sjh-FQ-I0Q" secondAttribute="top" constant="39" id="0a8-Ob-EHo"/>
-                            <constraint firstItem="NiY-zj-KOl" firstAttribute="trailing" secondItem="sjh-FQ-I0Q" secondAttribute="trailing" type="default" id="50E-AK-dLA"/>
+                            <constraint firstItem="1NX-cD-jn3" firstAttribute="top" secondItem="sjh-FQ-I0Q" secondAttribute="top" constant="62" id="5yT-Zj-uxX"/>
+                            <constraint firstAttribute="trailing" secondItem="IoS-XL-tUa" secondAttribute="trailing" constant="25" id="6LD-Qf-E2M"/>
                             <constraint firstAttribute="bottom" secondItem="NiY-zj-KOl" secondAttribute="bottom" constant="11" id="9LK-I4-izS"/>
-                            <constraint firstItem="1NX-cD-jn3" firstAttribute="top" secondItem="egg-8b-Gs7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Tcf-Q4-q6L"/>
+                            <constraint firstItem="NiY-zj-KOl" firstAttribute="trailing" secondItem="sjh-FQ-I0Q" secondAttribute="trailing" type="default" id="Ku2-e0-WpB"/>
+                            <constraint firstAttribute="trailing" secondItem="egg-8b-Gs7" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NTh-za-Vfb"/>
                             <constraint firstAttribute="trailing" secondItem="8zk-Hf-fqB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XRq-MB-Elo"/>
                             <constraint firstItem="1NX-cD-jn3" firstAttribute="leading" secondItem="sjh-FQ-I0Q" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="XZH-o4-dun"/>
                             <constraint firstItem="IoS-XL-tUa" firstAttribute="top" secondItem="sjh-FQ-I0Q" secondAttribute="top" constant="25" id="ZK1-Av-B6d"/>
-                            <constraint firstAttribute="trailing" secondItem="egg-8b-Gs7" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="buC-Q7-ThS"/>
+                            <constraint firstItem="2Xy-K9-qff" firstAttribute="top" secondItem="sjh-FQ-I0Q" secondAttribute="top" constant="101" id="cTj-z7-jbE"/>
                             <constraint firstItem="8zk-Hf-fqB" firstAttribute="leading" secondItem="sjh-FQ-I0Q" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="eeq-p9-bm4"/>
-                            <constraint firstAttribute="trailing" secondItem="IoS-XL-tUa" secondAttribute="trailing" constant="25" id="ncP-bc-xJ5"/>
                             <constraint firstItem="egg-8b-Gs7" firstAttribute="leading" secondItem="sjh-FQ-I0Q" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="pLb-1b-hin"/>
+                            <constraint firstItem="NiY-zj-KOl" firstAttribute="top" secondItem="sjh-FQ-I0Q" secondAttribute="top" constant="149" id="rsz-Zq-CkQ"/>
                             <constraint firstItem="8zk-Hf-fqB" firstAttribute="top" secondItem="sjh-FQ-I0Q" secondAttribute="top" constant="20" symbolic="YES" type="default" id="tXc-bN-5k4"/>
-                            <constraint firstItem="NiY-zj-KOl" firstAttribute="top" secondItem="sjh-FQ-I0Q" secondAttribute="top" constant="149" id="vrZ-xe-fcx"/>
+                            <constraint firstItem="egg-8b-Gs7" firstAttribute="top" secondItem="sjh-FQ-I0Q" secondAttribute="top" constant="39" id="v2l-m3-fdn"/>
                             <constraint firstItem="NiY-zj-KOl" firstAttribute="leading" secondItem="sjh-FQ-I0Q" secondAttribute="leading" type="default" id="yAh-dx-k5r"/>
+                            <constraint firstItem="2Xy-K9-qff" firstAttribute="leading" secondItem="sjh-FQ-I0Q" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="yDf-R3-vVe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="The-IJ-Mh9"/>
@@ -460,9 +479,6 @@
         <class className="MapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
         </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
         <class className="SessionListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SessionListViewController.h"/>
             <relationships>
@@ -492,6 +508,7 @@
         <class className="SpeakerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SpeakerViewController.h"/>
             <relationships>
+                <relationship kind="action" name="didTapViewSessions:"/>
                 <relationship kind="outlet" name="speakerBioView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="speakerFirstNameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="speakerImageView" candidateClass="UIImageView"/>

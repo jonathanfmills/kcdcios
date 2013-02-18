@@ -42,7 +42,10 @@
 
 -(void)loadSessions{
 
-    [[ApiClient sharedInstance] getPath:@"session" parameters:nil
+    //NSDictionary *params = self.speakerEmail == nil ? nil : [[NSDictionary alloc] initWithObjectsAndKeys: self.speakerEmail, @"email", nil];
+    NSDictionary *params = nil;
+    [self.sessions removeAllObjects];
+    [[ApiClient sharedInstance] getPath:@"session" parameters:params
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                     NSLog(@"Response: %@", responseObject);
                                     self.sessions = [NSMutableArray array];
@@ -88,7 +91,6 @@
 {
     static NSString *CellIdentifier = @"sessionCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    NSLog(@"Sessions: %@", self.sessions);
     
     Session *session = [self.sessions objectAtIndex:indexPath.row];
     
