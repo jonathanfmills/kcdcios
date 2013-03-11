@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     self.title = @"Sponsors";
-    self.sponsorshipTypes = [ NSArray arrayWithObjects:@"Platinum", @"Gold", @"Silver", @"Product", nil ];
+    self.sponsorshipTypes = [ NSArray arrayWithObjects:@"Platinum", @"Gold", @"Silver", @"Other", nil ];
     [self loadSponsors];
 }
 -(void)viewWillAppear:(BOOL)animated

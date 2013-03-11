@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Double-Tap To Reset";
 }
 
 -(void)viewWillAppear:(BOOL)animated
