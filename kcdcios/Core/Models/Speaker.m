@@ -13,6 +13,7 @@
 -(id)initWithDictionary :(NSDictionary *)dictionary{
     self = [super init];
     if(self){
+        self.speakerId = [dictionary objectForKey:@"id"];
         self.firstName = [dictionary objectForKey:@"firstName"];
         self.lastName = [dictionary objectForKey:@"lastName"];
         self.picUrl = [dictionary objectForKey:@"picUrl"];

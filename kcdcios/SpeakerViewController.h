@@ -1,6 +1,6 @@
 //
 //  SpeakerViewController.h
-//  kcdcios
+//  kcdc
 //
 //  Created by Lee Brandt on 2/2/13.
 //  Copyright (c) 2013 Lee Brandt. All rights reserved.

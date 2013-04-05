@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'kcdcios' target in the 'kcdcios' project
+// Prefix header for all source files of the 'kcdc' target in the 'kcdc' project
 //
 
 #import <Availability.h>

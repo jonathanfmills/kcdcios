@@ -1,6 +1,6 @@
 //
 //  SponsorListViewController.m
-//  kcdcios
+//  kcdc
 //
 //  Created by Lee Brandt on 1/30/13.
 //  Copyright (c) 2013 Lee Brandt. All rights reserved.

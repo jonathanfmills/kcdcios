@@ -1,6 +1,6 @@
 //
 //  SessionViewController.h
-//  kcdcios
+//  kcdc
 //
 //  Created by Lee Brandt on 2/3/13.
 //  Copyright (c) 2013 Lee Brandt. All rights reserved.

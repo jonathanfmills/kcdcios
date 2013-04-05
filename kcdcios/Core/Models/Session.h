@@ -16,6 +16,6 @@
 @property (nonatomic, strong) NSString *time;
 @property (nonatomic, strong) NSDate *date;
 
--(id) initWithDictionary:(NSDictionary *)dictionary;
-
+-(id) initWithDictionary:(NSDictionary*)dictionary;
+-(id) initWithYoMama:(NSString*) myString;
 @end

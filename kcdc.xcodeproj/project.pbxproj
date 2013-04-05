@@ -51,7 +51,7 @@
 		42D41ED316BDFC640055AC0E /* SpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D41ED216BDFC640055AC0E /* SpeakerViewController.m */; };
 		42D41ED616BE35CE0055AC0E /* SessionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D41ED516BE35CE0055AC0E /* SessionListViewController.m */; };
 		42D41ED916BE40200055AC0E /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D41ED816BE40200055AC0E /* Session.m */; };
-		DCEB27D3231F4754BBF416EC /* libPods-kcdciosSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA1607D62E342F89E1BCE55 /* libPods-kcdciosSpecs.a */; };
+		DCEB27D3231F4754BBF416EC /* libPods-kcdcSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA1607D62E342F89E1BCE55 /* libPods-kcdcSpecs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,11 +66,11 @@
 		4224D1EF16B8EE2A003FFBD2 /* appbar.home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appbar.home.png; path = kcdcios/Resources/images/appbar.home.png; sourceTree = "<group>"; };
 		4224D1F116B8F165003FFBD2 /* SponsorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SponsorListViewController.h; sourceTree = "<group>"; };
 		4224D1F216B8F165003FFBD2 /* SponsorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SponsorListViewController.m; sourceTree = "<group>"; };
-		4237F93E16B79168000EBBC3 /* kcdciosSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kcdciosSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4237F93E16B79168000EBBC3 /* kcdcSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kcdcSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4237F93F16B79168000EBBC3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4237F94516B79168000EBBC3 /* kcdciosSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kcdciosSpecs-Info.plist"; sourceTree = "<group>"; };
+		4237F94516B79168000EBBC3 /* kcdcSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kcdcSpecs-Info.plist"; sourceTree = "<group>"; };
 		4237F94716B79168000EBBC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4237F94C16B79168000EBBC3 /* kcdciosSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kcdciosSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		4237F94C16B79168000EBBC3 /* kcdcSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kcdcSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		4237F95016B79215000EBBC3 /* FirstSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstSpecs.m; sourceTree = "<group>"; };
 		4237F95316B79565000EBBC3 /* ApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiClient.h; path = Core/ApiClient.h; sourceTree = "<group>"; };
 		4237F95416B79565000EBBC3 /* ApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiClient.m; path = Core/ApiClient.m; sourceTree = "<group>"; };
@@ -94,14 +94,14 @@
 		426AFC8516BB641600F6A7E6 /* Speaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Speaker.h; path = Core/Models/Speaker.h; sourceTree = "<group>"; };
 		426AFC8616BB641600F6A7E6 /* Speaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Speaker.m; path = Core/Models/Speaker.m; sourceTree = "<group>"; };
 		426AFC9A16BB971B00F6A7E6 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar.jpg; path = kcdcios/Resources/images/avatar.jpg; sourceTree = "<group>"; };
-		42B8550A16B7524500AF5F74 /* kcdcios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kcdcios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B8550A16B7524500AF5F74 /* kcdc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kcdc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B8550E16B7524500AF5F74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42B8551016B7524500AF5F74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42B8551216B7524500AF5F74 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		42B8551616B7524500AF5F74 /* kcdcios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kcdcios-Info.plist"; sourceTree = "<group>"; };
+		42B8551616B7524500AF5F74 /* kcdc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kcdc-Info.plist"; sourceTree = "<group>"; };
 		42B8551816B7524500AF5F74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42B8551A16B7524500AF5F74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		42B8551C16B7524500AF5F74 /* kcdcios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kcdcios-Prefix.pch"; sourceTree = "<group>"; };
+		42B8551C16B7524500AF5F74 /* kcdc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kcdc-Prefix.pch"; sourceTree = "<group>"; };
 		42B8551D16B7524500AF5F74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42B8551E16B7524500AF5F74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		42B8552016B7524500AF5F74 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -116,9 +116,9 @@
 		42D41ED716BE40200055AC0E /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Session.h; path = Core/Models/Session.h; sourceTree = "<group>"; };
 		42D41ED816BE40200055AC0E /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Session.m; path = Core/Models/Session.m; sourceTree = "<group>"; };
 		5662B13A34F543AE9D3C74EC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kcdciosSpecs.xcconfig"; path = "Pods/Pods-kcdciosSpecs.xcconfig"; sourceTree = SOURCE_ROOT; };
+		8D9CD02AAC0F4392B3A2487A /* Pods-kcdcSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kcdcSpecs.xcconfig"; path = "Pods/Pods-kcdcSpecs.xcconfig"; sourceTree = SOURCE_ROOT; };
 		9D0FED0D36AC4CEF84DA2C95 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFA1607D62E342F89E1BCE55 /* libPods-kcdciosSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kcdciosSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA1607D62E342F89E1BCE55 /* libPods-kcdcSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kcdcSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 				4237F94016B79168000EBBC3 /* SenTestingKit.framework in Frameworks */,
 				4237F94116B79168000EBBC3 /* UIKit.framework in Frameworks */,
 				4237F94216B79168000EBBC3 /* Foundation.framework in Frameworks */,
-				DCEB27D3231F4754BBF416EC /* libPods-kcdciosSpecs.a in Frameworks */,
+				DCEB27D3231F4754BBF416EC /* libPods-kcdcSpecs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,21 +173,22 @@
 			name = images;
 			sourceTree = "<group>";
 		};
-		4237F94316B79168000EBBC3 /* kcdciosSpecs */ = {
+		4237F94316B79168000EBBC3 /* kcdcSpecs */ = {
 			isa = PBXGroup;
 			children = (
 				4237F94416B79168000EBBC3 /* Supporting Files */,
 				4237F95016B79215000EBBC3 /* FirstSpecs.m */,
 			);
+			name = kcdcSpecs;
 			path = kcdciosSpecs;
 			sourceTree = "<group>";
 		};
 		4237F94416B79168000EBBC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4237F94516B79168000EBBC3 /* kcdciosSpecs-Info.plist */,
+				4237F94516B79168000EBBC3 /* kcdcSpecs-Info.plist */,
 				4237F94616B79168000EBBC3 /* InfoPlist.strings */,
-				4237F94C16B79168000EBBC3 /* kcdciosSpecs-Prefix.pch */,
+				4237F94C16B79168000EBBC3 /* kcdcSpecs-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -238,13 +239,6 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		4251009116B8747C00C9DC21 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		42B854FF16B7524500AF5F74 = {
 			isa = PBXGroup;
 			children = (
@@ -254,20 +248,20 @@
 				4245AD0316CA4B41006CED6A /* Default@2x.png */,
 				4245AD0116CA4B37006CED6A /* Default-568h@2x.png */,
 				4224D1B416B87F1A003FFBD2 /* Resources */,
-				42B8551416B7524500AF5F74 /* kcdcios */,
-				4237F94316B79168000EBBC3 /* kcdciosSpecs */,
+				42B8551416B7524500AF5F74 /* kcdc */,
+				4237F94316B79168000EBBC3 /* kcdcSpecs */,
 				42B8550D16B7524500AF5F74 /* Frameworks */,
 				42B8550B16B7524500AF5F74 /* Products */,
 				5662B13A34F543AE9D3C74EC /* Pods.xcconfig */,
-				8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */,
+				8D9CD02AAC0F4392B3A2487A /* Pods-kcdcSpecs.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		42B8550B16B7524500AF5F74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42B8550A16B7524500AF5F74 /* kcdcios.app */,
-				4237F93E16B79168000EBBC3 /* kcdciosSpecs.octest */,
+				42B8550A16B7524500AF5F74 /* kcdc.app */,
+				4237F93E16B79168000EBBC3 /* kcdcSpecs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,12 +274,12 @@
 				42B8551216B7524500AF5F74 /* CoreGraphics.framework */,
 				9D0FED0D36AC4CEF84DA2C95 /* libPods.a */,
 				4237F93F16B79168000EBBC3 /* SenTestingKit.framework */,
-				CFA1607D62E342F89E1BCE55 /* libPods-kcdciosSpecs.a */,
+				CFA1607D62E342F89E1BCE55 /* libPods-kcdcSpecs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		42B8551416B7524500AF5F74 /* kcdcios */ = {
+		42B8551416B7524500AF5F74 /* kcdc */ = {
 			isa = PBXGroup;
 			children = (
 				42B8551D16B7524500AF5F74 /* AppDelegate.h */,
@@ -294,18 +288,18 @@
 				4224D1ED16B8EA2E003FFBD2 /* Main.storyboard */,
 				42B8551516B7524500AF5F74 /* Supporting Files */,
 				4251009016B8746800C9DC21 /* ViewControllers */,
-				4251009116B8747C00C9DC21 /* Views */,
 			);
+			name = kcdc;
 			path = kcdcios;
 			sourceTree = "<group>";
 		};
 		42B8551516B7524500AF5F74 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				42B8551616B7524500AF5F74 /* kcdcios-Info.plist */,
+				42B8551616B7524500AF5F74 /* kcdc-Info.plist */,
 				42B8551716B7524500AF5F74 /* InfoPlist.strings */,
 				42B8551A16B7524500AF5F74 /* main.m */,
-				42B8551C16B7524500AF5F74 /* kcdcios-Prefix.pch */,
+				42B8551C16B7524500AF5F74 /* kcdc-Prefix.pch */,
 				42B8552016B7524500AF5F74 /* Default.png */,
 				42B8552216B7524500AF5F74 /* Default@2x.png */,
 				42B8552416B7524500AF5F74 /* Default-568h@2x.png */,
@@ -316,9 +310,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4237F93D16B79168000EBBC3 /* kcdciosSpecs */ = {
+		4237F93D16B79168000EBBC3 /* kcdcSpecs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4237F94F16B79168000EBBC3 /* Build configuration list for PBXNativeTarget "kcdciosSpecs" */;
+			buildConfigurationList = 4237F94F16B79168000EBBC3 /* Build configuration list for PBXNativeTarget "kcdcSpecs" */;
 			buildPhases = (
 				4237F93916B79168000EBBC3 /* Sources */,
 				4237F93A16B79168000EBBC3 /* Frameworks */,
@@ -330,14 +324,14 @@
 			);
 			dependencies = (
 			);
-			name = kcdciosSpecs;
+			name = kcdcSpecs;
 			productName = kcdciosSpecs;
-			productReference = 4237F93E16B79168000EBBC3 /* kcdciosSpecs.octest */;
+			productReference = 4237F93E16B79168000EBBC3 /* kcdcSpecs.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		42B8550916B7524500AF5F74 /* kcdcios */ = {
+		42B8550916B7524500AF5F74 /* kcdc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42B8552E16B7524500AF5F74 /* Build configuration list for PBXNativeTarget "kcdcios" */;
+			buildConfigurationList = 42B8552E16B7524500AF5F74 /* Build configuration list for PBXNativeTarget "kcdc" */;
 			buildPhases = (
 				42B8550616B7524500AF5F74 /* Sources */,
 				42B8550716B7524500AF5F74 /* Frameworks */,
@@ -348,9 +342,9 @@
 			);
 			dependencies = (
 			);
-			name = kcdcios;
+			name = kcdc;
 			productName = kcdcios;
-			productReference = 42B8550A16B7524500AF5F74 /* kcdcios.app */;
+			productReference = 42B8550A16B7524500AF5F74 /* kcdc.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -362,7 +356,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Lee Brandt";
 			};
-			buildConfigurationList = 42B8550416B7524500AF5F74 /* Build configuration list for PBXProject "kcdcios" */;
+			buildConfigurationList = 42B8550416B7524500AF5F74 /* Build configuration list for PBXProject "kcdc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -374,8 +368,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42B8550916B7524500AF5F74 /* kcdcios */,
-				4237F93D16B79168000EBBC3 /* kcdciosSpecs */,
+				42B8550916B7524500AF5F74 /* kcdc */,
+				4237F93D16B79168000EBBC3 /* kcdcSpecs */,
 			);
 		};
 /* End PBXProject section */
@@ -519,7 +513,7 @@
 /* Begin XCBuildConfiguration section */
 		4237F94D16B79168000EBBC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */;
+			baseConfigurationReference = 8D9CD02AAC0F4392B3A2487A /* Pods-kcdcSpecs.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -531,11 +525,11 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kcdciosSpecs/kcdciosSpecs-Prefix.pch";
-				INFOPLIST_FILE = "kcdciosSpecs/kcdciosSpecs-Info.plist";
+				GCC_PREFIX_HEADER = "kcdciosSpecs/kcdcSpecs-Prefix.pch";
+				INFOPLIST_FILE = "kcdciosSpecs/kcdcSpecs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = kcdcSpecs;
 				TEST_AFTER_BUILD = YES;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = octest;
@@ -544,7 +538,7 @@
 		};
 		4237F94E16B79168000EBBC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D9CD02AAC0F4392B3A2487A /* Pods-kcdciosSpecs.xcconfig */;
+			baseConfigurationReference = 8D9CD02AAC0F4392B3A2487A /* Pods-kcdcSpecs.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -556,11 +550,11 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kcdciosSpecs/kcdciosSpecs-Prefix.pch";
-				INFOPLIST_FILE = "kcdciosSpecs/kcdciosSpecs-Info.plist";
+				GCC_PREFIX_HEADER = "kcdciosSpecs/kcdcSpecs-Prefix.pch";
+				INFOPLIST_FILE = "kcdciosSpecs/kcdcSpecs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = kcdcSpecs;
 				TEST_AFTER_BUILD = YES;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = octest;
@@ -621,8 +615,9 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Tracy BRANDT (X46649G5MU)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kcdcios/kcdcios-Prefix.pch";
-				INFOPLIST_FILE = "kcdcios/kcdcios-Info.plist";
+				GCC_PREFIX_HEADER = "kcdcios/kcdc-Prefix.pch";
+				INFOPLIST_FILE = "kcdcios/kcdc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRANK_LIBRARY_SEARCH_PATHS)",
@@ -632,8 +627,9 @@
 					"$(inherited)",
 					"$(FRANK_LDFLAGS)",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "05E861E4-A5F7-4202-94EC-F2477F4A5298";
+				PRODUCT_NAME = kcdc;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -645,11 +641,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Tracy BRANDT (X46649G5MU)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kcdcios/kcdcios-Prefix.pch";
-				INFOPLIST_FILE = "kcdcios/kcdcios-Info.plist";
+				GCC_PREFIX_HEADER = "kcdcios/kcdc-Prefix.pch";
+				INFOPLIST_FILE = "kcdcios/kcdc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "05E861E4-A5F7-4202-94EC-F2477F4A5298";
+				PRODUCT_NAME = kcdc;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -658,7 +656,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4237F94F16B79168000EBBC3 /* Build configuration list for PBXNativeTarget "kcdciosSpecs" */ = {
+		4237F94F16B79168000EBBC3 /* Build configuration list for PBXNativeTarget "kcdcSpecs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4237F94D16B79168000EBBC3 /* Debug */,
@@ -667,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42B8550416B7524500AF5F74 /* Build configuration list for PBXProject "kcdcios" */ = {
+		42B8550416B7524500AF5F74 /* Build configuration list for PBXProject "kcdc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42B8552C16B7524500AF5F74 /* Debug */,
@@ -676,7 +674,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42B8552E16B7524500AF5F74 /* Build configuration list for PBXNativeTarget "kcdcios" */ = {
+		42B8552E16B7524500AF5F74 /* Build configuration list for PBXNativeTarget "kcdc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42B8552F16B7524500AF5F74 /* Debug */,

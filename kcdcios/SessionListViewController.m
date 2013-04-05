@@ -1,6 +1,6 @@
 //
 //  SessionListViewController.m
-//  kcdcios
+//  kcdc
 //
 //  Created by Lee Brandt on 2/3/13.
 //  Copyright (c) 2013 Lee Brandt. All rights reserved.
@@ -41,19 +41,24 @@
 }
 
 -(void)loadSessions{
-
-    //NSDictionary *params = self.speakerEmail == nil ? nil : [[NSDictionary alloc] initWithObjectsAndKeys: self.speakerEmail, @"email", nil];
-    NSDictionary *params = nil;
+    NSDictionary *params = self.speakerId == nil ? nil : [[NSDictionary alloc] initWithObjectsAndKeys: self.speakerId, @"speakerId", nil];
     [self.sessions removeAllObjects];
     [[ApiClient sharedInstance] getPath:@"session" parameters:params
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                    NSLog(@"Response: %@", responseObject);
+                                    if([responseObject isEqual:Nil])
+                                    {
+                                        [SVProgressHUD dismiss];
+                                        return;
+                                    }
+                                    NSLog(@"*******RESPONSE******\n%@\n**********END RESPONSE************", responseObject);
                                     self.sessions = [NSMutableArray array];
                                     for (id sessionDictionary in responseObject) {
                                         Session *session = [[Session alloc] initWithDictionary:sessionDictionary];
                                         [self.sessions addObject:session];
                                     }
-                                    [self.tableView reloadData];
+                                    if (self.sessions.count > 0) {
+                                        [self.tableView reloadData];
+                                    }
                                     [self.pullToRefreshView finishLoading];
                                     [SVProgressHUD dismiss];
                                 }
@@ -64,7 +69,6 @@
 }
 
 #pragma mark - PullToRefresh Delegate Methods
-
 - (BOOL)pullToRefreshViewShouldStartLoading:(SSPullToRefreshView *)view{
     return YES;
 }
@@ -90,7 +94,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"sessionCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell==nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
     
     Session *session = [self.sessions objectAtIndex:indexPath.row];
     

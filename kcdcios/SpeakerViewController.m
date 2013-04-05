@@ -1,6 +1,6 @@
 //
 //  SpeakerViewController.m
-//  kcdcios
+//  kcdc
 //
 //  Created by Lee Brandt on 2/2/13.
 //  Copyright (c) 2013 Lee Brandt. All rights reserved.
@@ -43,8 +43,9 @@
 }
 
 -(IBAction)didTapViewSessions:(id)sender{
-    SessionListViewController *sessionListViewController = [SessionListViewController new];
-    [sessionListViewController setSpeakerEmail:self.speaker.email];
+    NSLog(@"Speaker ID is: %@", self.speaker.speakerId);
+    SessionListViewController *sessionListViewController = [[SessionListViewController alloc] init];
+    [sessionListViewController setSpeakerId:self.speaker.speakerId];
     [self.navigationController pushViewController: sessionListViewController animated:YES];
 }
 
